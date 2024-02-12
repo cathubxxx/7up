@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Kepler";
+  src: local("Kepler"),
+   url("./fonts/Kepler.otf") format("opentype");
+  font-weight: bold;
+ }
+html {
+  background-color: #010101;
+}
+App{
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.main {
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.header {
+  font-family: "Kepler";
+  padding-top: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
+.navItem {
+  font-size: 24px;
+  font-weight: 900;
+  padding-right: 50px;
+}
+.socialBlock{
+  margin: 20px 0px;
+}
+.social{
+  margin:0px 5px;
+}
+.imgButtonBlock{
+  text-align: center;
+  
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.button {
+  margin-top: 20px;
+  font-family: "Kepler";
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  min-width: 320px;
+  color: #fff;
+  border: 3px solid #fff;
+  margin-bottom: 50px;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+.buttonHeading {
+  font-size: 32px;
+  line-height:3px;
+}
+.buttonSubheading {
+  font-size: 22px;
+  line-height: 3px;
+  color: #8EFAC3;
+}
+.insideApp {
+  margin: 0 120px;
+}
+.section {
+  background-color: #010101;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.metric {
+  margin:50px 0px;
+  padding: 10px 50px;
+  text-align: center;
+  min-width: 200px;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  font-family: "Kepler";
+}
+.about {
+  margin-top: 0px;
+  background-image: url("./assets/bg2.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding:50px 0px;
+}
+
+.bodyText {
+  max-width: 500px;
+  margin: 0px auto;
+  padding-top:30px;
+  padding-bottom: 150px;
+}
+.caBlock{
+  background-color: #010101;
+  max-width: 250px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: "Kepler";
+  font-size: 24px;
+}
+.caText {
+  margin: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.can {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@media only screen and (max-width: 1500px) {
+  .can {
+    max-width: 300px;
+  }
+}
